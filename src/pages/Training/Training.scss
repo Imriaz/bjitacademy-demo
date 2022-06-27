@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.training__section {
+  display: flex;
+  margin: 2% 10%;
+  justify-content: space-between;
+  background: #ffffff;
+
+  &__line {
+    width: 100px;
+    height: 2px;
+    background: #001828;
+  }
+
+  &__top__title {
+    height: 26px;
+    margin-top: 48px;
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #0961e7;
+  }
+
+  &__second__title {
+    margin-top: -10px;
+
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #001828;
+  }
+
+  &__description {
+    width: 350px;
+    margin: 32px 0;
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #001828;
+  }
+
+  &__image {
+    height: 520px;
+    width: 504px;
+  }
+}
+
+/*--------------
+ Media Queries 
+ ---------------*/
+
+/* Mobile Device */
+
+@media only screen and (max-width: 688px) {
+  .training__section {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 10%;
+    justify-content: space-between;
+    background: #ffffff;
+
+    &__image {
+      margin: 33px;
+      width: 310.15px;
+      height: 320px;
+    }
+  }
+}
+
+/* Tablet Device */
+
+@media only screen and (max-width: 992px) {
+  .training__section {
+    display: flex;
+    margin: 2% 10%;
+    justify-content: space-between;
+    background: #ffffff;
+
+    &__image {
+      margin: 33px;
+      width: 289.73px;
+      height: 319px;
+    }
+  }
+}
+
+/*--------------
+ Media Queries End
+ -----------------*/

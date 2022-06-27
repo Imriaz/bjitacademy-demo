@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  width: 100%;
+  background-color: aqua;
+}
+.navbar__logo {
+  margin-left: 10%;
+}
+.navbar__logo__image {
+  width: 73.6px;
+  height: 80px;
+}
+.navbar__logo__title {
+  display: none;
+}
+.navbar__link__container {
+  margin-right: 10%;
+  display: flex;
+}
+.navbar__link__container__link {
+  list-style: none;
+  margin-right: 32px;
+}
+.navbar__link__container__down__icon {
+  margin-left: 14px;
+}
+.navbar__link__container__burger__icon {
+  display: none;
+}
+.navbar__link__active {
+  color: #0961e7;
+}
+
+@media only screen and (max-width: 688px), only screen and (max-width: 992px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 160px; */
+    height: 88px;
+    width: 100%;
+  }
+  .navbar__logo {
+    display: flex;
+    align-items: center;
+  }
+  .navbar__logo__title {
+    display: block;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .navbar__link__container__link {
+    display: none;
+  }
+  .navbar__link__container__burger__icon {
+    display: block;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

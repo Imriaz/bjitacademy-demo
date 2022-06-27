@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+@use "variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  width: 100%;
+  background-color: $background-color;
+
+  &__logo {
+    margin-left: 10%;
+
+    &__image {
+      width: 73.6px;
+      height: 80px;
+    }
+
+    &__title {
+      display: none;
+    }
+  }
+
+  &__link__container {
+    margin-right: 10%;
+    display: flex;
+
+    &__link {
+      list-style: none;
+      margin-right: 32px;
+    }
+    &__down__icon {
+      margin-left: 14px;
+    }
+    &__burger__icon {
+      display: none;
+    }
+  }
+
+  &__link__active {
+    color: #0961e7;
+  }
+}
+
+@use "media";
